@@ -1,0 +1,70 @@
+doctype html
+html(lang="ru-Ru")
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        block title
+            title SPB Zapchasti - Главная
+        link(rel='stylesheet', href='css/concat-css-libs.css')
+        link(rel='stylesheet', href='css/concat-css.css')
+    body
+        .overlay
+        .toPushFooter
+            block header
+                .header
+                    .container.flex_row__between.align_center
+                        #header__burger
+                            .burger
+                                i
+
+                        a(class='header__logo' href='index.html')
+                            img(src='img/logo-main.jpg')
+
+                        form(class='header__search' method='get')
+                            input(type='text' placeholder='VIN, Название, Номер')
+                            button(type='sumbit')
+
+                        .header__contact
+                            .tel +7 (981) 751-63-66
+                            .loc СПб, 5 верхний переулок 15
+
+                        a(class='header__basket' href='')
+
+
+                mixin navLink(link, name)
+                    li
+                        a(href=link class={active: name === page}) #{name}
+                        span.slash
+
+                .topnav__wrap
+                    .topnav
+                        a(class='header__logo' href='index.html')
+                            img(src='img/logo-main.jpg')
+                        .header__contact
+                            .tel +7 (981) 751-63-66
+                            .loc СПб, 5 верхний переулок 15
+                        ul.container
+                            +navLink('contact.html', 'Контакты')
+                            +navLink('delivery.html', 'Доставка')
+                            +navLink('payment.html', 'Оплата')
+                            +navLink('gaurantee.html', 'Гарантии')
+                            +navLink('repay.html', 'Возврат')
+                            +navLink('service.html', 'Сервис')
+                            li.authorization
+                                span Вход
+                                span.slash
+                                span Регистрация
+
+
+
+            block content
+                | Ling yellowtail flagtail southern flounder. Ribbon eel northern pike glass knifefish cepalin barbelless catfish cusk-eel ridgehead, mahi-mahi. Glass knifefish snubnose eel pompano dolphinfish lemon shark salmon duckbilled barracudina common tunny skate, codlet. Perch tarpon, zebra pleco--round herring jewfish, New Zealand sand diver. Spiny dwarf catfish slickhead clown triggerfish. Shad New Zealand sand diver cavefish banjo catfish bamboo shark spiny basslet, pigfish handfish.
+        block footer
+            .footer
+                .container.flex_row__start.align_center
+                    a(class='footer__vk' href='')
+                    a(class='footer__avito' href='')
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='js/concat-js-libs.js')
+        script(src='js/common.js')

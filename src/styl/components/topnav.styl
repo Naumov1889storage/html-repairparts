@@ -1,0 +1,134 @@
+.topnav {
+  height: 35px
+  border-bottom: 1px solid #c7c7c7
+  &__wrap {
+    position: relative
+  }
+  ul {
+    display: flex
+    height: 35px
+    li {
+      align-self center
+      &:nth-last-child(2) {
+        .slash {
+          display: none
+        }
+      }
+      a {
+        color: #0e1015
+        &:hover {
+          font-weight: 600
+        }
+      }
+    }
+    li.authorization {
+      margin-left: auto
+      span:not(.slash) {
+        cursor: pointer
+        &:hover {
+          font-weight: 600
+        }
+      }
+    }
+  }
+
+  .header {
+    &__logo {
+      display: none
+    }
+    &__contact {
+      display: none
+    }
+  }
+}
+
+
+@media (max-width: 940px) {
+  .topnav {
+    position: absolute
+    top: 0
+    z-index: 101
+    width: 246px
+    height: 0
+    background: #000
+    color: #ffffff
+    border-bottom: 0
+    overflow: hidden
+    opacity: 0
+    transition: .3s
+    &.active {
+      height: 367px
+      opacity: 1
+    }
+    a {
+      color: #ffffff !important
+    }
+    .header {
+      &__logo {
+        display: block
+        padding-top: 6px
+        padding-bottom: 5px
+        border-bottom: 1px solid #fbfbfb
+        text-align: center
+        img {
+          margin: 0 auto
+          width: 218px
+          height: 28px
+        }
+      }
+      &__contact {
+        display: block
+        .tel {
+          margin: 0
+          padding: 12px 0 12px 0
+          font-size: 20px
+          font-weight: 600
+          border-bottom: 1px solid #fbfbfb
+        }
+        .loc {
+          padding: 10px 0 10px 7px
+          font-size: 17px
+          background: url(/img/icon-loc.png) no-repeat 7px 47%
+          border-bottom: 1px solid #fbfbfb
+        }
+      }
+    }
+    ul {
+      padding: 0
+      flex-direction: column
+      li {
+        width: 100%
+        &:not(.authorization) {
+          align-self: flex-start
+          a {
+            display: block
+            padding: 4px 0 4px 23px
+            font-size: 18px
+            &:before {
+              content: '» '
+            }
+          }
+          .slash {
+            display: none
+          }
+          &:first-child {
+            padding-top: 8px
+          }
+          &:nth-last-child(2) {
+            padding-bottom: 8px
+          }
+        }
+
+        &.authorization {
+          margin: 0
+          padding: 10px 0 10px 0
+          text-align: center
+          border-top: 1px solid #fbfbfb
+          span {
+            font-size: 18px
+          }
+        }
+      }
+    }
+  }
+}

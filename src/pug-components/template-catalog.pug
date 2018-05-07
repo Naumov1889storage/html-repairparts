@@ -1,0 +1,54 @@
+extends layout
+
+block content
+    .catalog
+        .container
+            block catalogTitle
+                h1 <span>Катализатор</span> для BMW 3-серия E36
+
+            .crumbs
+
+
+
+            .flex_row__between
+                .catalog_left
+                    .catalog_search
+                        input(type='text' placeholder='Быстрый поиск')
+                        button(type='submit')
+                    .decor-useless
+                    .accordion__wrap
+                        .accordion
+                            .accordion_title <i class='arrow'></i> Выхлопная система
+                            .accordion_content
+                                ul
+                                    li
+                                        a(href='') Болт подвески глушителя
+                                    li
+                                        a(href='') Задняя часть глушителя
+                                    li(class='active')
+                                        a(href='') Катализатор
+                                    li
+                                        a(href='') Бачок гидроусилителя
+                                    li
+                                        a(href='') Втулка рулевой рейки
+                        .accordion
+                            .accordion_title <i class='arrow'></i> Двигатель
+                            .accordion_content
+                                ul
+                                    li
+                                        a(href='') Болт подвески глушителя
+                                    li
+                                        a(href='') Задняя часть глушителя
+                                    li(class='active')
+                                        a(href='') Катализатор
+                                    li
+                                        a(href='') Бачок гидроусилителя
+                                    li
+                                        a(href='') Втулка рулевой рейки
+
+                    <div class="car-under-menu">
+                        <img src="img/picture-car.png" alt="">
+                    </div>
+
+                .catalog_right
+                    block catalogRight
