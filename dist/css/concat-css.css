@@ -43,7 +43,7 @@
   right: 0;
   width: 38px;
   height: 100%;
-  background: #fff url("/img/icon-search2.png") no-repeat 10px;
+  background: #fff url("../img/icon-search2.png") no-repeat 10px;
 }
 
 .catalog_left .catalog_search button:before {
@@ -91,7 +91,7 @@
   left: 5px;
   width: 42px;
   height: 40px;
-  background: #000 url("/img/iconset-catalog.jpg") no-repeat;
+  background: #000 url("../img/iconset-catalog.jpg") no-repeat;
 }
 
 .catalog_left .accordion_title .arrow {
@@ -479,7 +479,7 @@
   bottom: 1px;
   right: 1px;
   width: 27px;
-  background: url("/img/icon-arrow.png") center no-repeat;
+  background: url("../img/icon-arrow.png") center no-repeat;
   trasition: 0.3s;
 }
 
@@ -749,17 +749,17 @@
 }
 @font-face {
   font-family: Candara;
-  src: url("/fonts/Candara.ttf");
+  src: url("../fonts/Candara.ttf");
 }
 
 @font-face {
   font-family: Impact;
-  src: url("/fonts/Impact.ttf");
+  src: url("../fonts/Impact.ttf");
 }
 
 @font-face {
   font-family: Archive;
-  src: url("/fonts/Archive.ttf");
+  src: url("../fonts/Archive.ttf");
 }
 
 * {
@@ -942,7 +942,7 @@ body {
   right: 0;
   width: 100%;
   height: 100%;
-  background: url("/img/icon-cross.png") no-repeat center;
+  background: url("../img/icon-cross.png") no-repeat center;
 }
 
 h1,
@@ -972,14 +972,14 @@ h1 > span {
 .footer__vk {
   width: 20px;
   height: 20px;
-  background: url("/img/iconset-footer.png") no-repeat;
+  background: url("../img/iconset-footer.png") no-repeat;
 }
 
 .footer__avito {
   margin-left: 8px;
   width: 66px;
   height: 19px;
-  background: url("/img/iconset-footer.png") -28px no-repeat;
+  background: url("../img/iconset-footer.png") -28px no-repeat;
 }
 
 @media (max-width: 990px) {
@@ -1057,7 +1057,7 @@ h1 > span {
   right: 0;
   width: 40px;
   height: 30px;
-  background: #cc383f url("/img/icon-search.png") no-repeat 50%;
+  background: #cc383f url("../img/icon-search.png") no-repeat 50%;
   -webkit-border-radius: 0 5px 5px 0;
           border-radius: 0 5px 5px 0;
 }
@@ -1079,7 +1079,7 @@ h1 > span {
 .header__basket {
   min-width: 36px;
   height: 29px;
-  background: url("/img/icon-basket.png");
+  background: url("../img/icon-basket.png");
 }
 
 .header #header__burger {
@@ -1244,7 +1244,7 @@ h1 > span {
   .topnav .header__contact .loc {
     padding: 10px 0 10px 7px;
     font-size: 17px;
-    background: url("/img/icon-loc.png") no-repeat 7px 47%;
+    background: url("../img/icon-loc.png") no-repeat 7px 47%;
     border-bottom: 1px solid #fbfbfb;
   }
 
