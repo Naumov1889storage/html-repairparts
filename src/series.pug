@@ -1,0 +1,51 @@
+extends pug-components/layout
+
+block content
+    .series
+        .container
+            h1 запчаст и для <span class='font-red'>BMW</span>
+
+            form.search.search--clear
+                input(type='search' placeholder='Название или год')
+                button(class='search--clear' type='button')
+
+            .series__wrap
+                .series__item
+                    .title.divider.right
+                        b 1 серия
+
+                    .content
+                        .item
+                            img(src='img/picture-series-sample.jpg')
+                            b.name 3-серия E36
+                            span.date (1998-2004)
+
+                .series__item
+                    .title.divider.right
+                        b 2 серия
+
+                    .content
+                        .item
+                            img(src='img/picture-series-sample.jpg')
+                            b.name 3-серия E36
+                            span.date (1998-2004)
+                        .item
+                            img(src='img/picture-series-sample.jpg')
+                            b.name 3-серия 6
+                            span.date (1998-2004)
+                        .item
+                            img(src='img/picture-series-sample.jpg')
+                            b.name 3-серия E36
+                            span.date (1998-2004)
+                        .item
+                            img(src='img/picture-series-sample.jpg')
+                            b.name 3-серия E36
+                            span.date (1998-2004)
+                        .item
+                            img(src='img/picture-series-sample.jpg')
+                            b.name X3 E83
+                            span.date (1998-2004)
+
+
+
+

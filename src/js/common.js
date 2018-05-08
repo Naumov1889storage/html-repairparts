@@ -13,4 +13,8 @@ $(function () {
         $('.topnav, .overlay, .burger').toggleClass('active')
     });
 
+    $('.search--clear button').click(function () {
+       $(this).parent('.search--clear').find('input').val('')
+    });
+
 });

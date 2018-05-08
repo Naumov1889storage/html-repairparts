@@ -4,3 +4,88 @@ block append title
     -page = 'Главная'
 
 block content
+    .index
+        .container
+            h1 Запчасти для иномарок
+
+            form(class='index__search' method='get')
+                .select__wrap
+                    <select name="marka" id="marka">
+                    <option value="" selected="selected" disabled="disabled">Марка</option>
+                    <option value="Acura">Acura</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Acura">Acura</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    </select>
+                .select__wrap
+                    <select name="model" id="model">
+                    <option value="" selected="selected" disabled="disabled">Модель</option>
+                    <option value="Acura">Acura</option>
+                    </select>
+                .select__wrap
+                    <select name="group" id="group">
+                    <option value="" selected="selected" disabled="disabled">Группа</option>
+                    <option value="Acura">Acura</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    </select>
+                .select__wrap
+                    <select name="part" id="part">
+                    <option value="" selected="selected" disabled="disabled">Запчасть</option>
+                    <option value="Acura">Acura</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Citroen">Citroen</option><option value="Chevrolet">Chevrolet</option>
+                    <option value="Chery">Chery</option>
+                    <option value="Daewoo">Daewoo</option><option value="Ford">Ford</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Infiniti">Infiniti</option>
+                    <option value="KIA">KIA</option><option value="Lexus">Lexus</option>
+                    <option value="Mazda">Mazda</option>
+                    <option value="Mercedes Benz">Mercedes Benz</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Opel">Opel</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Renault">Renault</option><option value="SAAB">SAAB</option>
+                    <option value="Subaru">Subaru</option>
+                    <option value="Ssang Yong">Ssang Yong</option><option value="Toyota">Toyota</option>
+                    <option value="VAZ">VAZ</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    </select>
+
+                button(type='submit') Перейти
+            .menu-car-wrap
+                <ul class="menu-car flex">
+                    <li><a href="/acura"><img src="img/icons-car/acura.png" alt="Запчасти на Acura">Acura</a><br></li>
+                    <li><a href="/audi"><img src="img/icons-car/audi.png" alt="Запчасти на Audi">Audi</a><br></li>
+                    <li><a href="/bmw"><img src="img/icons-car/bmw.png" alt="Запчасти на BMW">BMW</a><br></li>
+                    <li><a href="/citroen"><img src="img/icons-car/citroen.png" alt="Запчасти на Citroen">Citroen</a><br></li>
+                    <li><a href="/chevrolet"><img src="img/icons-car/chevrolet.png" alt="Запчасти на Chevrolet">Chevrolet</a><br></li>
+                    <li><a href="/chery"><img src="img/icons-car/chery.png" alt="Запчасти на Chery">Chery</a><br></li>
+                    <li><a href="/daewoo"><img src="img/icons-car/daewoo.png" alt="Запчасти на Daewoo">Daewoo</a><br></li>
+                    <li><a href="/ford"><img src="img/icons-car/ford.png" alt="Запчасти на Ford">Ford</a><br></li>
+                    <li><a href="/honda"><img src="img/icons-car/honda.png" alt="Запчасти на Honda">Honda</a><br></li>
+                    <li><a href="/hyundai"><img src="img/icons-car/hyundai.png" alt="Запчасти на Hyundai">Hyundai</a><br></li>
+                    <li><a href="/infiniti"><img src="img/icons-car/infiniti.png" alt="Запчасти на Infiniti">Infiniti</a><br></li>
+                    <li><a href="/kia"><img src="img/icons-car/kia.png" alt="Запчасти на KIA">KIA</a><br></li>
+                    <li><a href="/lexus"><img src="img/icons-car/lexus.png" alt="Запчасти на Lexus">Lexus</a><br></li>
+                    <li><a href="/mazda"><img src="img/icons-car/mazda.png" alt="Запчасти на Mazda">Mazda</a><br></li>
+                    <li><a href="/mercedes-benz"><img src="img/icons-car/mercedes-benz.png" alt="Запчасти на Mercedes Benz">Mercedes Benz</a><br></li>
+                    <li><a href="/mitsubishi"><img src="img/icons-car/mitsubishi.png" alt="Запчасти на Mitsubishi">Mitsubishi</a><br></li>
+                    <li><a href="/nissan"><img src="img/icons-car/nissan.png" alt="Запчасти на Nissan">Nissan</a><br></li>
+                    <li><a href="/opel"><img src="img/icons-car/opel.png" alt="Запчасти на Opel">Opel</a><br></li>
+                    <li><a href="/peugeot"><img src="img/icons-car/peugeot.png" alt="Запчасти на Peugeot">Peugeot</a><br></li>
+                    <li><a href="/renault"><img src="img/icons-car/renault.png" alt="Запчасти на Renault">Renault</a><br></li>
+                    <li><a href="/saab"><img src="img/icons-car/saab.png" alt="Запчасти на SAAB">SAAB</a><br></li>
+                    <li><a href="/subaru"><img src="img/icons-car/subaru.png" alt="Запчасти на Subaru">Subaru</a><br></li>
+                    <li><a href="/ssang-yong"><img src="img/icons-car/ssang-yong.png" alt="Запчасти на Ssang Yong">Ssang Yong</a><br></li>
+                    <li><a href="/toyota"><img src="img/icons-car/toyota.png" alt="Запчасти на Toyota">Toyota</a><br></li>
+                    <li><a href="/vaz"><img src="img/icons-car/vaz.png" alt="Запчасти на VAZ">VAZ</a><br></li>
+                    <li><a href="/volvo"><img src="img/icons-car/volvo.png" alt="Запчасти на Volvo">Volvo</a><br></li>
+                    <li><a href="/volkswagen"><img src="img/icons-car/volkswagen.png" alt="Запчасти на Volkswagen">Volkswagen</a><br></li>
+                </ul>

@@ -131,6 +131,11 @@ gulp.task('imgdest', function () {
 		.pipe(gulp.dest('dist/img'))
 });
 
+gulp.task('imgdest-icons-car', function () {
+	gulp.src('src/img/icons-car/*')
+		.pipe(gulp.dest('dist/img/icons-car'))
+});
+
 /*browser-sync*/
 gulp.task('browser-sync', function () {
 	browserSync({
@@ -147,13 +152,14 @@ gulp.task('build', ['imagemin'], function () {
 });
 
 
-gulp.task('watch', ['clean',  'browser-sync', 'pug', 'stylus', 'libs-css', 'libs-js', 'common-js', 'fontsdest', 'videodest', 'imgdest'], function () {
+gulp.task('watch', ['clean',  'browser-sync', 'pug', 'stylus', 'libs-css', 'libs-js', 'common-js', 'fontsdest', 'videodest', 'imgdest', 'imgdest-icons-car'], function () {
 	gulp.watch('src/styl/**/*.styl', ['stylus']);
 	gulp.watch('src/**/*.pug', ['pug']);
 	gulp.watch('src/libs/css/**/*.css', ['libs-css']);
 	gulp.watch('src/libs/**/*.js', ['libs-js']);
 	gulp.watch('src/js/**/*.js', ['common-js']);
 	gulp.watch('src/img/*', ['imgdest']);
+	gulp.watch('src/img/icons-car/*', ['imgdest-icons-car']);
 	gulp.watch('src/fonts/*', ['fontsdest']);
 	gulp.watch('src/video/*', ['videodest']);
 });
