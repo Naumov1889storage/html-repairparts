@@ -98,6 +98,25 @@ body {
     border: 1px solid #afafaf
     border-radius: 5px
   }
+  &--loup {
+    position: relative
+    input {
+      padding-left: 9px
+      padding-right: 27px
+      &::-webkit-search-cancel-button{
+        display: none
+      }
+    }
+    button {
+      position: absolute
+      top: 1px
+      right: 1px
+      width: 27px
+      height: 28px
+      background: url(/img/icon-search2.png) no-repeat 4px center
+      background-size: 15px 16px
+    }
+  }
   &--clear {
     position: relative
     input {
@@ -143,4 +162,76 @@ h1, h1 > span {
       font-size: 22px
       line-height: 25px
     }
+}
+
+.crumbs {
+  display: flex
+  flex-wrap: wrap
+  margin: 8px 0 20px 0
+  a {
+    color: #3d8ed1
+    &.current {
+      pointer-events: none
+      cursor: default
+      color: #464646
+    }
+  }
+  &__arrow {
+    margin: 0 4px 0 4px
+  }
+  &__search {
+    position: relative
+    z-index: 2
+    margin-left: 2px
+    margin-right: 6px
+    button[type='button'] {
+      position: relative
+      top: 1px
+      width: 17px
+      height: 16px
+      border: 1px solid #afafaf
+      border-radius: 3px
+      background: #f1f7fc url(/img/icon-arrow.png) no-repeat center
+      background-size: 11px 6px
+      cursor: pointer
+    }
+    .content {
+      position: absolute
+      top: 30px
+      padding: 11px 0 10px 0
+      width: 173px
+      transform: scaleY(0)
+      transform-origin:top
+      transition:.2s ease-out
+      overflow: hidden
+      border: 1px solid #afafaf
+      background-color: #f3f3f3
+      &.active {
+        transform: scaleY(1)
+      }
+      form {
+        position: relative
+        margin: 0 auto
+        width: 151px
+      }
+      ul {
+        margin-top: 10px
+        li {
+          a {
+            display: block
+            padding-left: 20px
+            color: #464646
+            line-height: 28px
+            &:hover {
+              color: #000000
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  
+@media (max-width: 400px) {
+    
 }

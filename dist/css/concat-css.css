@@ -3,11 +3,6 @@
   text-align: left;
 }
 
-.catalog .crumbs {
-  padding-top: 7px;
-  padding-bottom: 13px;
-}
-
 .catalog {
   height: 100%;
   margin-bottom: 30px;
@@ -910,6 +905,30 @@ body {
           border-radius: 5px;
 }
 
+.search--loup {
+  position: relative;
+}
+
+.search--loup input {
+  padding-left: 9px;
+  padding-right: 27px;
+}
+
+.search--loup input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search--loup button {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 27px;
+  height: 28px;
+  background: url("../img/icon-search2.png") no-repeat 4px center;
+  -webkit-background-size: 15px 16px;
+          background-size: 15px 16px;
+}
+
 .search--clear {
   position: relative;
 }
@@ -960,6 +979,98 @@ h1 > span {
     font-size: 22px;
     line-height: 25px;
   }
+}
+
+.crumbs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 8px 0 20px 0;
+}
+
+.crumbs a {
+  color: #3d8ed1;
+}
+
+.crumbs a.current {
+  pointer-events: none;
+  cursor: default;
+  color: #464646;
+}
+
+.crumbs__arrow {
+  margin: 0 4px 0 4px;
+}
+
+.crumbs__search {
+  position: relative;
+  z-index: 2;
+  margin-left: 2px;
+  margin-right: 6px;
+}
+
+.crumbs__search button[type='button'] {
+  position: relative;
+  top: 1px;
+  width: 17px;
+  height: 16px;
+  border: 1px solid #afafaf;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: #f1f7fc url("../img/icon-arrow.png") no-repeat center;
+  -webkit-background-size: 11px 6px;
+          background-size: 11px 6px;
+  cursor: pointer;
+}
+
+.crumbs__search .content {
+  position: absolute;
+  top: 30px;
+  padding: 11px 0 10px 0;
+  width: 173px;
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  overflow: hidden;
+  border: 1px solid #afafaf;
+  background-color: #f3f3f3;
+}
+
+.crumbs__search .content.active {
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.crumbs__search .content form {
+  position: relative;
+  margin: 0 auto;
+  width: 151px;
+}
+
+.crumbs__search .content ul {
+  margin-top: 10px;
+}
+
+.crumbs__search .content ul li a {
+  display: block;
+  padding-left: 20px;
+  color: #464646;
+  line-height: 28px;
+}
+
+.crumbs__search .content ul li a:hover {
+  color: #000;
 }
 .footer .container {
   padding-left: 40px;

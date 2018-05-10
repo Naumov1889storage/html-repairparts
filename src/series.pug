@@ -5,6 +5,28 @@ block content
         .container
             h1 запчаст и для <span class='font-red'>BMW</span>
 
+            .crumbs
+                a(href='') Главная
+                span.crumbs__arrow »
+                .flex_row__between
+                    .crumbs__search
+                        button(type='button' class='toggler--js')
+                        .content
+                            form.search.search--loup
+                                input(type='search' placeholder='Марка')
+                                button(type='submit')
+                            ul
+                                li
+                                    a(href='') Acura
+                                li
+                                    a(href='') Audi
+                                li
+                                    a(href='') BMW
+                    a(href='') BMW
+
+
+
+
             form.search.search--clear
                 input(type='search' placeholder='Название или год')
                 button(class='search--clear' type='button')
