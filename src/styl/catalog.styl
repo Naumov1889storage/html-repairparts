@@ -179,7 +179,23 @@
 }
 
 .catalog_closed {
-  padding: 270px 36px 0 0
+  padding: 0px 36px 0 0
+  .title {
+    position: relative
+    margin-bottom: 73px
+    font-family: Impact
+    font-size: 290px
+    font-weight: 400
+    line-height: 223px
+    text-transform: uppercase
+    color: #f6f6f6
+    text-shadow: -5px 5px 0px #e4e4e4
+    img {
+      position: absolute
+      bottom: -60px
+      right: -40px
+    }
+  }
   p {
     margin-bottom: 15px
     width: 100%
@@ -192,13 +208,15 @@
 
 .catalog_opened {
   text-align: left
+  font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important
 }
 .catalog {
   &_title {
     padding-bottom: 10px
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important
     font-size: 18px
     a {
+      font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important
       color: #7eaedd
       text-decoration: underline
       &:visited {
@@ -208,11 +226,15 @@
         text-decoration: none
       }
     }
+    span {
+      font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important
+    }
   }
   &_item__left {
     display: flex
     flex-direction: column
     align-items: center
+    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important
     padding-right: 15px
     border-right: 1px solid #cecece
     img {
@@ -231,10 +253,12 @@
     flex-direction: column
     justify-content: space-between
     padding: 0 15px 0 15px
+    font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important
     line-height: 17px
     p {
       width: 100%
       text-align: left
+      font-family: Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !important
     }
     b {
       display: block
@@ -278,7 +302,7 @@
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 970px) {
   .catalog .container > .flex_row__between {
     flex-direction: column
   }
@@ -289,10 +313,39 @@
 
   .catalog_closed {
     padding: 0
+    .title {
+      display: inline-block
+    }
+    p {
+
+    }
+    .img-left {
+      display: block
+      img {
+        float: left
+        margin-bottom: 5px
+      }
+    }
   }
   .catalog_right_imgbg {
     position: relative
     right: 0
+  }
+}
+
+@media (max-width: 750px) {
+  .catalog_right {
+    .title {
+      font-size: 200px
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .catalog_right {
+    .title {
+      font-size: 170px
+    }
   }
 }
 
@@ -317,9 +370,6 @@
 
 @media (max-width: 500px) {
   .catalog_closed {
-    .flex_row__between {
-      flex-direction: column
-    }
     p {
       margin-top: 6px
       text-align: left
@@ -335,6 +385,31 @@
     &_left {
       min-width: 100%
       width: 100%
+    }
+  }
+  .catalog_right {
+    .title {
+      margin-bottom: 10px
+      font-size: 160px
+      img {
+        bottom: -2px
+        height: 80px
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .catalog_right {
+    .title {
+      margin-bottom: 30px
+      line-height: 120px
+      font-size: 120px
+      img {
+        right: -20px
+        bottom: -25px
+        height: 60px
+      }
     }
   }
 }

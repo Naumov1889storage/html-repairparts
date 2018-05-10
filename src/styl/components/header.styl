@@ -6,6 +6,7 @@
   background: #000
   color: #ffffff
   .container {
+    position: relative
     height: 100%
   }
   &:after {
@@ -32,6 +33,17 @@
       background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(233,62,69,1) 100%)
       border-radius: 5px
     }
+    &:before {
+      content: ''
+      position: absolute
+      z-index 100
+      top: 0
+      right: -1px
+      width: 10px
+      height: 100%
+      background: #e13b42
+      border-radius: 5px
+    }
     input {
       position: relative
       z-index: 1
@@ -50,15 +62,16 @@
       right: 0
       width: 40px
       height: 30px
-      background: #cc383f url(/img/icon-search.png) no-repeat 50%
+      background: #e13b42 url(/img/icon-search.png) no-repeat 50%
       border-radius: 0 5px 5px 0
     }
   }
 
   &__contact {
+    margin-top: 5px
     text-align: center
     .tel {
-      margin-bottom: 4px
+      margin-bottom: 1px
       font-family: Arial
       font-size: 22px
     }
@@ -102,6 +115,23 @@
         &:after {
           top: 10px
         }
+      }
+    }
+  }
+
+  &__products {
+    position: absolute
+    right: -825px
+    display: flex
+    align-items: center
+    width: 800px
+    height: 100%
+    .item {
+      margin-right: 12px
+      width: 80px
+      height: 52px
+      img {
+        border-radius: 3px
       }
     }
   }

@@ -5,6 +5,7 @@ html(lang="ru-Ru")
         meta(name='viewport', content="initial-scale=1.0, width=device-width")
         block title
             title SPB Zapchasti - Главная
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic')
         link(rel='stylesheet', href='css/concat-css-libs.css')
         link(rel='stylesheet', href='css/concat-css.css')
     body
@@ -18,7 +19,7 @@ html(lang="ru-Ru")
                                 i
 
                         a(class='header__logo' href='index.html')
-                            img(src='img/logo-main.jpg')
+                            img(src='img/logo-main.png')
 
                         form(class='header__search' method='get')
                             input(type='search' placeholder='VIN, Название, Номер')
@@ -30,6 +31,23 @@ html(lang="ru-Ru")
 
                         a(class='header__basket' href='')
 
+                        .header__products
+                            a(class='item' href='')
+                                img(src='img/picture-product-sample1.jpg')
+                            a(class='item' href='')
+                                img(src='img/picture-product-sample1.jpg')
+                            a(class='item' href='')
+                                img(src='img/picture-product-sample2.jpg')
+                            a(class='item' href='')
+                                img(src='img/picture-product-sample2.jpg')
+                            a(class='item' href='')
+                                img(src='img/picture-product-sample1.jpg')
+
+
+
+
+
+
 
                 mixin navLink(link, name)
                     li
@@ -39,7 +57,7 @@ html(lang="ru-Ru")
                 .topnav__wrap
                     .topnav
                         a(class='header__logo' href='index.html')
-                            img(src='img/logo-main.jpg')
+                            img(src='img/logo-main.png')
                         .header__contact
                             .tel +7 (981) 751-63-66
                             .loc СПб, 5 верхний переулок 15
